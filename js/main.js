@@ -7,7 +7,7 @@ import {
 } from "./components.js";
 // pegar referencia dos elementos
 const about = document.querySelector("#about");
-const navegation = document.querySelector("#navegation");
+const navegation = document.querySelector("#collapsibleNavbar");
 const skills = document.querySelector("#skills");
 const experience = document.querySelector("#experience");
 const portfolio = document.querySelector("#portfolio");
@@ -26,7 +26,7 @@ fetch('../data/pageContent.json')
     .then(response => response.json())
     .then(json => {
         dataJson = json;
-        CreateAllElements(json,languageValue);
+        CreateAllElements(dataJson,languageValue);
     });
 
 function CreateAllElements(data, languageValue) {

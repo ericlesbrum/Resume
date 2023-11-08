@@ -24,7 +24,7 @@
         },
         "description": {
             "pt_br": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ab atque ad, impedit molestias architecto corrupti. Nesciunt excepturi molestiae quibusdam quisquam adipisci recusandae aliquam, repellat pariatur error voluptatum magnam! Id!",
-            "en_us": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ab atque ad, impedit molestias architecto corrupti. Nesciunt excepturi molestiae quibusdam quisquam adipisci recusandae aliquam, repellat pariatur error voluptatum magnam! Id!"
+            "en_us": "1Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ab atque ad, impedit molestias architecto corrupti. Nesciunt excepturi molestiae quibusdam quisquam adipisci recusandae aliquam, repellat pariatur error voluptatum magnam! Id!"
         }
     },
     "skills": {
@@ -39,71 +39,191 @@
             "teste4"
         ]
     },
-    "experience": [
-        {
-            "firstDay": "XX/XXXX",
-            "lastDay": "XX/XXXX",
-            "company": "XXXXXXXXXXXX",
-            "occupation": "Dev",
-            "description": {
-                "pt_br": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ab atque ad, impedit molestias architecto corrupti. Nesciunt excepturi molestiae quibusdam quisquam adipisci recusandae aliquam, repellat pariatur error voluptatum magnam! Id!",
-                "en_us": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ab atque ad, impedit molestias architecto corrupti. Nesciunt excepturi molestiae quibusdam quisquam adipisci recusandae aliquam, repellat pariatur error voluptatum magnam! Id!"
+    "experience": {
+        "title": {
+            "pt_br": "Experiência",
+            "en_us": "Experience"
+        },
+        "data": [
+            {
+                "firstDay": "XX/XXXX",
+                "lastDay": "XX/XXXX",
+                "company": "XXXXXXXXXXXX",
+                "occupation": "Lorem",
+                "description": {
+                    "pt_br": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ab atque ad, impedit molestias architecto corrupti. Nesciunt excepturi molestiae quibusdam quisquam adipisci recusandae aliquam, repellat pariatur error voluptatum magnam! Id!",
+                    "en_us": "1Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ab atque ad, impedit molestias architecto corrupti. Nesciunt excepturi molestiae quibusdam quisquam adipisci recusandae aliquam, repellat pariatur error voluptatum magnam! Id!"
+                },
+                "skills_used": [
+                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ab atque ad, impedit molestias architecto corrupti. Nesciunt excepturi molestiae quibusdam quisquam adipisci recusandae aliquam, repellat pariatur error voluptatum magnam! Id!",
+                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ab atque ad, impedit molestias architecto corrupti. Nesciunt excepturi molestiae quibusdam quisquam adipisci recusandae aliquam, repellat pariatur error voluptatum magnam! Id!"
+                ]
             },
-            "skills_used": [
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ab atque ad, impedit molestias architecto corrupti. Nesciunt excepturi molestiae quibusdam quisquam adipisci recusandae aliquam, repellat pariatur error voluptatum magnam! Id!",
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ab atque ad, impedit molestias architecto corrupti. Nesciunt excepturi molestiae quibusdam quisquam adipisci recusandae aliquam, repellat pariatur error voluptatum magnam! Id!"
-            ]
-        }
-    ],
+            {
+                "firstDay": "XX/XXXX",
+                "lastDay": "XX/XXXX",
+                "company": "XXXXXXXXXXXX",
+                "occupation": "Lorem",
+                "description": {
+                    "pt_br": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ab atque ad, impedit molestias architecto corrupti. Nesciunt excepturi molestiae quibusdam quisquam adipisci recusandae aliquam, repellat pariatur error voluptatum magnam! Id!",
+                    "en_us": "1Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ab atque ad, impedit molestias architecto corrupti. Nesciunt excepturi molestiae quibusdam quisquam adipisci recusandae aliquam, repellat pariatur error voluptatum magnam! Id!"
+                },
+                "skills_used": [
+                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ab atque ad, impedit molestias architecto corrupti. Nesciunt excepturi molestiae quibusdam quisquam adipisci recusandae aliquam, repellat pariatur error voluptatum magnam! Id!",
+                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ab atque ad, impedit molestias architecto corrupti. Nesciunt excepturi molestiae quibusdam quisquam adipisci recusandae aliquam, repellat pariatur error voluptatum magnam! Id!"
+                ]
+            }
+        ]
+    },
     "portfolio": [
         {
             "projectName": "projectName",
             "type": "teste",
-            "image": "image",
+            "image": "../images/wip.png",
             "link": "",
             "description": {
                 "pt_br": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ab atque ad, impedit molestias architecto corrupti. Nesciunt excepturi molestiae quibusdam quisquam adipisci recusandae aliquam, repellat pariatur error voluptatum magnam! Id!",
-                "en_us": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ab atque ad, impedit molestias architecto corrupti. Nesciunt excepturi molestiae quibusdam quisquam adipisci recusandae aliquam, repellat pariatur error voluptatum magnam! Id!"
+                "en_us": "1Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ab atque ad, impedit molestias architecto corrupti. Nesciunt excepturi molestiae quibusdam quisquam adipisci recusandae aliquam, repellat pariatur error voluptatum magnam! Id!"
             },
-            "tech": [1,1,1,1]
+            "tech": [
+                1,
+                1,
+                1,
+                1
+            ]
         },
         {
             "projectName": "projectName",
             "type": "teste",
-            "image": "image",
+            "image": "../images/wip.png",
             "link": "",
             "description": {
                 "pt_br": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ab atque ad, impedit molestias architecto corrupti. Nesciunt excepturi molestiae quibusdam quisquam adipisci recusandae aliquam, repellat pariatur error voluptatum magnam! Id!",
-                "en_us": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ab atque ad, impedit molestias architecto corrupti. Nesciunt excepturi molestiae quibusdam quisquam adipisci recusandae aliquam, repellat pariatur error voluptatum magnam! Id!"
+                "en_us": "1Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ab atque ad, impedit molestias architecto corrupti. Nesciunt excepturi molestiae quibusdam quisquam adipisci recusandae aliquam, repellat pariatur error voluptatum magnam! Id!"
             },
-            "tech": [1,1,1,1]
+            "tech": [
+                1,
+                1,
+                1,
+                1
+            ]
         },
         {
             "projectName": "projectName",
             "type": "teste",
-            "image": "image",
+            "image": "../images/wip.png",
             "link": "",
             "description": {
                 "pt_br": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ab atque ad, impedit molestias architecto corrupti. Nesciunt excepturi molestiae quibusdam quisquam adipisci recusandae aliquam, repellat pariatur error voluptatum magnam! Id!",
-                "en_us": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ab atque ad, impedit molestias architecto corrupti. Nesciunt excepturi molestiae quibusdam quisquam adipisci recusandae aliquam, repellat pariatur error voluptatum magnam! Id!"
+                "en_us": "1Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ab atque ad, impedit molestias architecto corrupti. Nesciunt excepturi molestiae quibusdam quisquam adipisci recusandae aliquam, repellat pariatur error voluptatum magnam! Id!"
             },
-            "tech": [1,1,1,1]
+            "tech": [
+                1,
+                1,
+                1,
+                1
+            ]
         },
         {
             "projectName": "projectName",
             "type": "teste",
-            "image": "image",
+            "image": "../images/wip.png",
             "link": "",
             "description": {
                 "pt_br": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ab atque ad, impedit molestias architecto corrupti. Nesciunt excepturi molestiae quibusdam quisquam adipisci recusandae aliquam, repellat pariatur error voluptatum magnam! Id!",
-                "en_us": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ab atque ad, impedit molestias architecto corrupti. Nesciunt excepturi molestiae quibusdam quisquam adipisci recusandae aliquam, repellat pariatur error voluptatum magnam! Id!"
+                "en_us": "1Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ab atque ad, impedit molestias architecto corrupti. Nesciunt excepturi molestiae quibusdam quisquam adipisci recusandae aliquam, repellat pariatur error voluptatum magnam! Id!"
             },
-            "tech": [1,1,1,1]
+            "tech": [
+                1,
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "projectName": "projectName",
+            "type": "teste",
+            "image": "../images/wip.png",
+            "link": "",
+            "description": {
+                "pt_br": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ab atque ad, impedit molestias architecto corrupti. Nesciunt excepturi molestiae quibusdam quisquam adipisci recusandae aliquam, repellat pariatur error voluptatum magnam! Id!",
+                "en_us": "1Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ab atque ad, impedit molestias architecto corrupti. Nesciunt excepturi molestiae quibusdam quisquam adipisci recusandae aliquam, repellat pariatur error voluptatum magnam! Id!"
+            },
+            "tech": [
+                1,
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "projectName": "projectName",
+            "type": "teste",
+            "image": "../images/wip.png",
+            "link": "",
+            "description": {
+                "pt_br": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ab atque ad, impedit molestias architecto corrupti. Nesciunt excepturi molestiae quibusdam quisquam adipisci recusandae aliquam, repellat pariatur error voluptatum magnam! Id!",
+                "en_us": "1Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ab atque ad, impedit molestias architecto corrupti. Nesciunt excepturi molestiae quibusdam quisquam adipisci recusandae aliquam, repellat pariatur error voluptatum magnam! Id!"
+            },
+            "tech": [
+                1,
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "projectName": "projectName",
+            "type": "teste",
+            "image": "../images/wip.png",
+            "link": "",
+            "description": {
+                "pt_br": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ab atque ad, impedit molestias architecto corrupti. Nesciunt excepturi molestiae quibusdam quisquam adipisci recusandae aliquam, repellat pariatur error voluptatum magnam! Id!",
+                "en_us": "1Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ab atque ad, impedit molestias architecto corrupti. Nesciunt excepturi molestiae quibusdam quisquam adipisci recusandae aliquam, repellat pariatur error voluptatum magnam! Id!"
+            },
+            "tech": [
+                1,
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "projectName": "projectName",
+            "type": "teste",
+            "image": "../images/wip.png",
+            "link": "",
+            "description": {
+                "pt_br": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ab atque ad, impedit molestias architecto corrupti. Nesciunt excepturi molestiae quibusdam quisquam adipisci recusandae aliquam, repellat pariatur error voluptatum magnam! Id!",
+                "en_us": "1Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ab atque ad, impedit molestias architecto corrupti. Nesciunt excepturi molestiae quibusdam quisquam adipisci recusandae aliquam, repellat pariatur error voluptatum magnam! Id!"
+            },
+            "tech": [
+                1,
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "projectName": "projectName",
+            "type": "teste",
+            "image": "../images/wip.png",
+            "link": "",
+            "description": {
+                "pt_br": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ab atque ad, impedit molestias architecto corrupti. Nesciunt excepturi molestiae quibusdam quisquam adipisci recusandae aliquam, repellat pariatur error voluptatum magnam! Id!",
+                "en_us": "1Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ab atque ad, impedit molestias architecto corrupti. Nesciunt excepturi molestiae quibusdam quisquam adipisci recusandae aliquam, repellat pariatur error voluptatum magnam! Id!"
+            },
+            "tech": [
+                1,
+                1,
+                1,
+                1
+            ]
         }
     ],
     "contacts": {
         "pt_br": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ab atque ad, impedit molestias architecto corrupti. Nesciunt excepturi molestiae quibusdam quisquam adipisci recusandae aliquam, repellat pariatur error voluptatum magnam! Id!",
-        "en_us": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ab atque ad, impedit molestias architecto corrupti. Nesciunt excepturi molestiae quibusdam quisquam adipisci recusandae aliquam, repellat pariatur error voluptatum magnam! Id!",
+        "en_us": "1Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ab atque ad, impedit molestias architecto corrupti. Nesciunt excepturi molestiae quibusdam quisquam adipisci recusandae aliquam, repellat pariatur error voluptatum magnam! Id!",
         "social_media": []
     }
 }

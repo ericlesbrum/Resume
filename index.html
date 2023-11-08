@@ -5,42 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
-<body>
-    <header>
-        <div>
-            <h4>
+<body class="justify-content-center">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark text-center justify-content-center sticky-top">
+        <div class="container-fluid">
+            <h3 class="navbar-brand ">
                 <span>
                     Ericles
                 </span>
                 <span>
                     Brum
                 </span>
-            </h4>
+            </h3>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            </div>
+            <div class="">
+                <select id="language">
+                    <option value="pt_br">pt-br</option>
+                    <option value="en_us">en-us</option>
+                </select>
+            </div>
         </div>
-        <nav id="navegation">
-        </nav>
-        <select id="language">
-            <option value="pt_br">pt-br</option>
-            <option value="en_us">en-us</option>
-        </select>
-    </header>
-    <main>
+    </nav>
+    <main class="container">
         <!--ABOUT-->
-        <section id="about">
+        <section id="about" class="mb-3">
         </section>
         <!--SKILLS-->
-        <section id="skills">
+        <section id="skills" class="mb-3">
         </section>
         <!--EXPERIENCE-->
-        <section id="experience">
+        <section id="experience" class="mb-3">
         </section>
         <!--PORTFOLIO-->
-        <section id="portfolio">
+        <section id="portfolio" class="mb-3">
         </section>
         <!--CONTACTS-->
-        <section id="contacts">
+        <section id="contacts" class="mb-3">
         </section>
     </main>
 </body>

@@ -1,30 +1,39 @@
-//criar
-function CreateNavegationContent(data,languageValue) {
+import { CreateExperienceCard,CreatePortfolioCard } from "./cards.js";
+import { createLiElement } from "./elements.js";
+function CreateNavegationContent(data, languageValue) {
     return `
-        <ul>
-            <li>${data[languageValue]["home"]}</li>
-            <li>${data[languageValue]["skills"]}</li>
-            <li>${data[languageValue]["experience"]}</li>
-            <li>${data[languageValue]["portfolio"]}</li>
-            <li>${data[languageValue]["contacts"]}</li>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">${data[languageValue]["home"]}</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">${data[languageValue]["skills"]}</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">${data[languageValue]["experience"]}</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">${data[languageValue]["portfolio"]}</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">${data[languageValue]["contacts"]}</a>
+            </li>
         </ul>
-    `;
+    `
 }
 
-function CreateAboutContent(data,languageValue) {
+function CreateAboutContent(data, languageValue) {
     return `
-        <div>
-            <h3>${data["title"][languageValue]}</h3>
-        </div>
+        <h3 class="mb-2 text-center">${data["title"][languageValue]}</h3>
         <p>
             ${data["description"][languageValue]}
         </p>
     `;
 }
 
-function CreateSkillsContent(data,languageValue) {
+function CreateSkillsContent(data, languageValue) {
     let body = `
-        <h3>${data["title"][languageValue]}</h3>
+        <h3 class="mb-2 text-center">${data["title"][languageValue]}</h3>
         <ul>
             ${createLiElement(data["tech"])}
         </ul>
@@ -32,78 +41,23 @@ function CreateSkillsContent(data,languageValue) {
     return body;
 }
 
-function CreateExperienceCard(data,languageValue) {
-    let body = "";
-    data.forEach(element => {
-        body += `
-        <div>
-            <div>
-                <h3>${element['occupation']}</h3>
-                <h4>${element['company']}</h4>
-            </div>
-            <div>
-                <div>
-                    <span>${element['firstDay']}</span>
-                    <span>${element['lastDay']}</span>
-                </div>
-                <div>
-                    <p>${element['description'][languageValue]}</p>
-                </div>
-                <div>
-                    <ul>
-                        ${createLiElement(element["skills_used"])}
-                    </ul>
-                </div>
-            </div>
-        </div>
-    `
-    });
-    return body;
-}
-
-function createLiElement(array) {
-    let body = "";
-    array.forEach(element => {
-        body += `<li>${element}</li>`;
-    });
-    return body;
-}
-
-function CreatePortfolioContent(data) {
+function CreatePortfolioContent(data, languageValue) {
     let cards = "";
-    data.forEach(element => {
-        cards += CreatePortfolioCard(element);
+    data.forEach((element, index) => {
+        cards += CreatePortfolioCard(element, languageValue);
     });
     return `
-         <div>
-            <h3>PORTFOLIO</h3>
-        </div>
-        <div>
-            <ul>
-                ${cards}
-            </ul>
+        <h3 class="mb-2 text-center">PORTFOLIO</h3>
+        <div class="row">
+            ${cards}
         </div>
         
     `;
 }
 
-function CreatePortfolioCard(data,languageValue) {
-    return `
-    <div>
-        <h4>${data["projectName"]}</h4>
-        <span>${data["image"]}</span>
-        <p>
-            ${data["description"][languageValue]}
-        </p>
-        <ul>
-            ${createLiElement(data["tech"])}
-        </ul>
-    </div>
-    `
-}
 
 
-export{
+export {
     CreateNavegationContent,
     CreateAboutContent,
     CreateSkillsContent,
