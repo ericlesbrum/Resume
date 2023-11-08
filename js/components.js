@@ -3,20 +3,20 @@ import { createLiElement } from "./elements.js";
 function CreateNavegationContent(data, languageValue) {
     return `
         <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="#">${data[languageValue]["home"]}</a>
+            <li class="nav-item" id="navegationItem">
+                <a class="nav-link" href="javascript:void(0);">${data[languageValue]["home"]}</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">${data[languageValue]["skills"]}</a>
+            <li class="nav-item" id="navegationItem">
+                <a class="nav-link" href="javascript:void(0);">${data[languageValue]["skills"]}</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">${data[languageValue]["experience"]}</a>
+            <li class="nav-item" id="navegationItem">
+                <a class="nav-link" href="javascript:void(0);">${data[languageValue]["experience"]}</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">${data[languageValue]["portfolio"]}</a>
+            <li class="nav-item" id="navegationItem">
+                <a class="nav-link" href="javascript:void(0);">${data[languageValue]["portfolio"]}</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">${data[languageValue]["contacts"]}</a>
+            <li class="nav-item" id="navegationItem">
+                <a class="nav-link" href="javascript:void(0);">${data[languageValue]["contacts"]}</a>
             </li>
         </ul>
     `

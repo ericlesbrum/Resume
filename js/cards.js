@@ -53,7 +53,6 @@ function CreatePortfolioCard(data, languageValue) {
     </div>
     `
 }
-console.log("teste");
 
 export{
     CreateExperienceCard,
