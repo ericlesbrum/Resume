@@ -1,5 +1,7 @@
-import { CreateExperienceCard,CreatePortfolioCard } from "./cards.js";
-import { createLiElement } from "./elements.js";
+import { CreateExperienceCard, CreatePortfolioCard, CreateSkillCard } from "./cards.js";
+import { createLiElement, createButtonElement } from "./elements.js";
+const typeOfProject = [];
+
 function CreateNavegationContent(data, languageValue) {
     return `
         <ul class="navbar-nav">
@@ -30,32 +32,56 @@ function CreateAboutContent(data, languageValue) {
         </p>
     `;
 }
-
+// ${createLiElement(data["tech"])}
 function CreateSkillsContent(data, languageValue) {
     let body = `
-        <h3 class="mb-2 text-center">${data["title"][languageValue]}</h3>
-        <ul>
-            ${createLiElement(data["tech"])}
-        </ul>
-        `
+    <div class="row">
+        <h3 class="mb-2 text-center col-sm-12">${data["title"][languageValue]}</h3>
+        <div class="col-sm-12 row">
+           ${CreateCards(data["tech"])}
+        </div>
+    </div>
+    `
     return body;
 }
 
-function CreatePortfolioContent(data, languageValue) {
+function CreatePortfolioContent(data, languageValue, filter = null) {
     let cards = "";
-    data.forEach((element, index) => {
-        cards += CreatePortfolioCard(element, languageValue);
+    let filterBuffer = "";
+    data.forEach((element) => {
+        if (!typeOfProject.includes(element["type"]))
+            typeOfProject.push(element["type"]);
+    });
+    if (filter === null)
+        filterBuffer = typeOfProject[0];
+    else {
+        filterBuffer = filter;
+    }
+    data.forEach((element) => {
+        if (element["type"] === filterBuffer) {
+            cards += CreatePortfolioCard(element, languageValue);
+        }
     });
     return `
+    <div>
         <h3 class="mb-2 text-center">PORTFOLIO</h3>
+        <div class="d-flex justify-content-center mb-3">${createButtonElement(typeOfProject)}</div>
         <div class="row">
             ${cards}
         </div>
-        
+    </div>
     `;
 }
 
 
+function CreateCards(data) {
+    let cards = "";
+    console.log
+    data.forEach(element => {
+        cards += CreateSkillCard(element);
+    });
+    return cards;
+}
 
 export {
     CreateNavegationContent,

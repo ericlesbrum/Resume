@@ -33,11 +33,11 @@ function CreateExperienceCard(data, languageValue) {
 
 function CreatePortfolioCard(data, languageValue) {
     return `
-    <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+    <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
         <div class="card">
             <div class="card-body">
                 <div class="card-title">
-                    <h4>${data["projectName"]}</h4>
+                    <h4 class="text-center ">${data["projectName"]}</h4>
                 </div>
                 <img class="card-img" src="${data["image"]}" alt="Card image" style="width:100%">
                 <div>
@@ -54,7 +54,20 @@ function CreatePortfolioCard(data, languageValue) {
     `
 }
 
-export{
+function CreateSkillCard(data) {
+    return `
+    <div class="card col-sm-12">
+        <div class="card-body">
+            <span>
+                ${data}
+            </span>
+        </div>
+    </div>
+    `;
+}
+
+export {
     CreateExperienceCard,
-    CreatePortfolioCard
+    CreatePortfolioCard,
+    CreateSkillCard
 }

@@ -38,14 +38,23 @@ function CreateAllElements(data, languageValue) {
     experience.innerHTML = CreateExperienceCard(data["experience"], languageValue);
     portfolio.innerHTML = CreatePortfolioContent(data["portfolio"], languageValue)
     ScrollToSection();
+    ShowProjectPerType();
 }
 function ScrollToSection() {
     let navLinks = document.querySelectorAll("#navegationItem");
     let sections = document.querySelectorAll('section');
     navLinks.forEach((element, index) => {
         element.addEventListener('click', () => {
-            // element.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
             sections[index].scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+        })
+    });
+}
+function ShowProjectPerType() {
+    let buttons = document.querySelectorAll("button");
+    buttons.forEach(element => {
+        element.addEventListener("click", () => {
+            portfolio.innerHTML = CreatePortfolioContent(dataJson["portfolio"], languageValue, element.innerHTML)
+            ShowProjectPerType();
         })
     });
 }
