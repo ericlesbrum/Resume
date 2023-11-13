@@ -7,16 +7,26 @@ function createLiElement(array) {
 }
 function createButtonElement(array) {
     let body = "";
-    array.forEach((element, index) => {
+    array.forEach((element) => {
         body += `
         <div class="m-1">
-            <button  type="button" class="btn btn-primary btn-sm">${element}</button>
+            <button type="button" class="btn btn-primary btn-sm botoes">${element}</button>
         </div>
         `;
     });
     return body;
 }
+function GetDateInfo(data, language) {
+    if (!data["date"]) {
+        return data["present"][language];
+    }
+    else {
+        return data["date"];
+    }
+}
+
 export {
     createLiElement,
-    createButtonElement
+    createButtonElement,
+    GetDateInfo
 }

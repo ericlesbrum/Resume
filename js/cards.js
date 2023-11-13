@@ -1,6 +1,7 @@
-import { createLiElement } from "./elements.js";
+import { createLiElement, GetDateInfo } from "./elements.js";
 function CreateExperienceCard(data, languageValue) {
     let body = `<h3 class="text-center mb-2">${data["title"][languageValue]}</h3>`;
+    body += `<div class="row">`
     data["data"].forEach(element => {
         body += `
         <div class="card mb-3">
@@ -13,7 +14,7 @@ function CreateExperienceCard(data, languageValue) {
                     <div>
                         <span>${element['firstDay']}</span>
                         <span>-</span>
-                        <span>${element['lastDay']}</span>
+                        <span>${GetDateInfo(element['lastDay'],languageValue)}</span>
                     </div>
                     <div>
                         <p>${element['description'][languageValue]}</p>
@@ -28,6 +29,7 @@ function CreateExperienceCard(data, languageValue) {
         </div>
     `
     });
+    body += "</div>"
     return body;
 }
 
@@ -56,7 +58,7 @@ function CreatePortfolioCard(data, languageValue) {
 
 function CreateSkillCard(data) {
     return `
-    <div class="card col-sm-12">
+    <div class="card col-sm-12 col-md-4 col-lg-3">
         <div class="card-body">
             <span>
                 ${data}
