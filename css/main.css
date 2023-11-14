@@ -1,0 +1,23 @@
+body {
+    font-size: 18px;
+}
+
+.nav-item {
+    border-bottom: 1px solid transparent;
+    transition: 500 ease-in;
+}
+
+.nav-item:hover {
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+#language {
+    border: none;
+    background-image: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border-radius: 5px;
+    padding: 5px;
+}

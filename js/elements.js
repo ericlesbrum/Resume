@@ -10,7 +10,7 @@ function createButtonElement(array) {
     array.forEach((element) => {
         body += `
         <div class="m-1">
-            <button type="button" class="btn btn-primary btn-sm botoes">${element}</button>
+            <button type="button" class="btn btn-primary btn-md botoes btn-dark">${element}</button>
         </div>
         `;
     });
